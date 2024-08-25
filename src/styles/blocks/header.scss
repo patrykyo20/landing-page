@@ -1,0 +1,85 @@
+@import "../utils/vars";
+@import "../utils/mixins";
+
+.header {
+  min-height: 100vh;
+  display: grid;
+  background-color: $primary-page-color;
+  border-radius: 0 0 30px 30px;
+
+  &__container {
+    display: grid;
+    justify-content: center;
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 1fr 5fr 5fr 3fr 10fr;
+    column-gap: $grid-gap;
+    padding: 18px 20px 48px;
+
+    @include for-tablet {
+      padding: 0;
+      grid-template-columns: repeat(6, 70px);
+      column-gap: 30px;
+      grid-template-rows: 1fr 1fr 1fr 1fr 5fr;
+    }
+
+    @include for-small-desktop {
+      grid-template-columns: repeat(12, 58px);
+      column-gap: 20px;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @include for-desktop {
+      grid-template-columns: repeat(12, 68px);
+      column-gap: 30px;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &__title {
+    grid-column: span 2;
+    align-self: end;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    @include for-small-desktop {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__paragraph {
+    grid-column: span 2;
+    align-self: center;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    @include for-small-desktop {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__button {
+    align-self: end;
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    @include for-small-desktop {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__slide {
+    margin-top: 48px;
+
+    @include for-desktop {
+      margin-top: 146px;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "../utils/mixins";
+
+.section {
+  display: grid;
+  column-gap: $grid-gap;
+  grid-template-columns: repeat(2, 130px);
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+
+  @include for-tablet {
+    grid-template-columns: repeat(6, 70px);
+    column-gap: 30px;
+  }
+
+  @include for-small-desktop {
+    column-gap: 20px;
+    grid-template-columns: repeat(12, 58px);
+  }
+
+  @include for-desktop {
+    column-gap: 30px;
+    grid-template-columns: repeat(12, 68px);
+  }
+
+  &--white {
+    background-color: white;
+    padding: 72px 0;
+
+    @include for-tablet {
+      padding: 128px 0;
+
+      &:last-child {
+        padding: 200px 0;
+      }
+    }
+  }
+
+  &--border {
+    border-radius: 30px;
+  }
+
+  &__headline {
+    margin-bottom: 16px;
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+    @include for-small-desktop {
+      grid-column: span 12;
+    }
+  }
+
+  &__title {
+    grid-column: span 2;
+    margin-bottom: 24px;
+
+    @include for-tablet {
+      grid-column: span 3;
+    }
+    @include for-small-desktop {
+      grid-column: span 12;
+    }
+  }
+
+  &__container {
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 60px 60px 90px 90px 60px 60px 90px 90px;
+      column-gap: 30px;
+    }
+
+    @include for-small-desktop {
+      grid-column: span 12;
+      display: grid;
+      grid-template-columns: 4fr 2fr 3fr 3fr;
+      grid-template-rows: repeat(5, 140px);
+      column-gap: 30px;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 24px;
+
+    @include for-tablet {
+      grid-column: 1 / 4;
+    }
+  }
+
+  &__about {
+    margin-top: 56px;
+
+    @include for-tablet {
+      margin-top: 64px;
+    }
+  }
+
+  &__article {
+    margin-top: 24px;
+  }
+}

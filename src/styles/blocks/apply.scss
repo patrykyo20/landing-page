@@ -1,0 +1,54 @@
+@import "../utils/mixins";
+
+.apply {
+
+  &__section {
+
+    @include for-tablet {
+      background-image: url("../images/Shapes.png");
+      object-fit: cover;
+      background-position: center;
+    }
+  }
+
+  &__title {
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+      margin-top: 72px;
+    }
+
+    @include for-small-desktop {
+      grid-column: span 12;
+    }
+  }
+
+  &__paragraph {
+    grid-column: span 2;
+    margin-top: 24px;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    @include for-small-desktop {
+      grid-column: 2 / 12;
+      justify-self: center;
+    }
+  }
+
+  &__button {
+    margin-top: 56px;
+
+    @include for-tablet {
+      grid-column: span 6;
+      justify-self: center;
+    }
+
+    @include for-small-desktop {
+      grid-column: span 12;
+      justify-self: center;
+    }
+  }
+}

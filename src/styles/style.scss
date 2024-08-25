@@ -1,0 +1,34 @@
+@import "./utils/reset";
+@import "./utils/vars";
+@import "./utils/mixins";
+
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/title";
+@import "./blocks/paragraph";
+@import "./blocks/button";
+@import "./blocks/slide";
+@import "./blocks/slider";
+@import "./blocks/menu";
+@import "./blocks/navigation";
+@import "./blocks/main";
+@import "./blocks/section";
+@import "./blocks/about";
+@import "./blocks/testimonials";
+@import "./blocks/service";
+@import "./blocks/apply";
+@import "./blocks/footer";
+@import "./blocks/form";
+@import "./blocks/address";
+@import "./blocks/input";
+@import "./blocks/icon";
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: $gray-color;
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,11 @@
+.form {
+  &__item {
+    margin-top: 40px;
+  }
+
+  &__label {
+    &:not(:focus):not(:active) {
+      @include visually-hidden();
+    }
+  }
+}

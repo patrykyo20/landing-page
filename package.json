@@ -1,0 +1,22 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "my first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrykyo20/landing_dia.git"
+  },
+  "keywords": [
+    "landing_dia"
+  ],
+  "author": "Patryk Wierzbowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrykyo20/landing_dia/issues"
+  },
+  "homepage": "https://github.com/patrykyo20/landing_dia#readme"
+}

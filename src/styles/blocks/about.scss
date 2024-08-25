@@ -1,0 +1,78 @@
+@import "../utils/vars";
+
+.about {
+  grid-column: span 2;
+  display: grid;
+
+  @include for-tablet {
+    grid-column: span 6;
+    justify-self: center;
+    grid-template-columns: repeat(4, 70px);
+    column-gap: 30px;
+  }
+
+  @include for-small-desktop {
+    justify-self: center;
+    grid-template-columns: repeat(3, 58px);
+    column-gap: 30px;
+  }
+
+  &__container {
+    grid-column: span 2;
+
+    @include for-tablet {
+      display: grid;
+      grid-column: span 6;
+    }
+
+    @include for-small-desktop {
+      grid-column: span 12;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+    @include for-small-desktop {
+      grid-column: span 12;
+    }
+  }
+
+  &__headline {
+    margin-top: 32px;
+    @include for-tablet {
+      grid-column: span 4;
+    }
+
+    @include for-small-desktop {
+      grid-column: span 3;
+    }
+  }
+
+  &__photo {
+    justify-self: center;
+    @include for-tablet {
+      grid-column: span 4;
+    }
+    @include for-small-desktop {
+      grid-column: span 3;
+    }
+  }
+
+  &__paragraph {
+    margin-top: 16px;
+
+    @include for-tablet {
+      grid-column: span 4;
+    }
+
+    @include for-small-desktop {
+      grid-column: span 3;
+    }
+  }
+}

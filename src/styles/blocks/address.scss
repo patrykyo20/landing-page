@@ -1,0 +1,23 @@
+.address {
+  &__title {
+    opacity: 0.5;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    font-style: normal;
+
+    &--style {
+      margin-top: 16px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 32px;
+  }
+}

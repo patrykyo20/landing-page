@@ -1,0 +1,41 @@
+@import "../utils/mixins";
+
+.main {
+  background-color: #f2f6fa;
+
+  &__title {
+    grid-column: span 2;
+    margin-top: 120px;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    @include for-small-desktop {
+      grid-column: span 12;
+    }
+  }
+
+  &__paragraph {
+    grid-column: span 2;
+    margin-top: 24px;
+    margin-bottom: 120px;
+
+    @include for-tablet {
+      grid-column: span 6;
+      margin-top: 16px;
+    }
+
+    @include for-small-desktop {
+      grid-column: span 12;
+    }
+  }
+
+  &__section {
+    margin-top: 120px;
+
+    @include for-tablet {
+      margin-top: 148px;
+    }
+  }
+}

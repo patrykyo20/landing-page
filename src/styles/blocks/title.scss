@@ -1,0 +1,60 @@
+@import "../utils/vars";
+@import "../utils/mixins";
+
+.title {
+  color: $white-color;
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -2px;
+
+  &--mini {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--primary {
+    color: $primary-color;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  &--secondary {
+    color: $primary-color;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    @include for-tablet {
+      font-size: 52px;
+    }
+  }
+
+  &--about {
+    color: $primary-color;
+    font-size: 20px;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  &--headline {
+    color: #c0cdd7;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &--end {
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 130%;
+  }
+}

@@ -1,0 +1,33 @@
+@mixin for-tablet() {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin for-small-desktop() {
+  @media (min-width: 1124px) {
+    @content;
+  }
+}
+
+@mixin for-desktop() {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin for-tv() {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
