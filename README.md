@@ -1,4 +1,4 @@
-## [DEMO LINK]([https://patrykyo20.github.io/layout_miami/](https://imaginative-druid-36b301.netlify.app/ )
+## [DEMO LINK](https://imaginative-druid-36b301.netlify.app/)
 
 ## Project Overview
 
